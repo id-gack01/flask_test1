@@ -10,10 +10,19 @@
      <form method="POST">
             <label>Enter your name: </label>
             <input type="text" id="name" name="name">
+            <br>
+            <label>Enter number of pages: </label>
+            <input type="number" min="0" id="page_length" name="page_length">
+            <br>
+            <label>Enter page you're on: </label>
+            <input type="number" min="0" id="current_page" name="current_page">
             <input type="submit">
      </form>
 
-<p>{{greetings}}</p>
+<h2>{{greetings}}</h2>
+<p>{{progress}}</p>
+
+
 
 
 </body>
