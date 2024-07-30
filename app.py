@@ -17,4 +17,10 @@ def my_form_post():
     text = request.form['name']
     greetings = "Hello, " + string.capwords(text)
 
-    return render_template("input_test.html", greetings=greetings)
+    page_length = request.form['page_length']
+    current_page = request.form['current_page']
+
+    progress_calculation = int(page_length) - int(current_page)
+    progress = "You have " + str(progress_calculation) + " pages to go"
+
+    return render_template("input_test.html", greetings=greetings, progress=progress)
