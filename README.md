@@ -18,6 +18,6 @@ cd to that activated environment and install Flask and some other packages
 
 $ pip install Flask MarkupSafe Werkzeug blinker Jinja2 itsdangerous
 
-To run, type the following command...
+To run, type the following command... (Remember you're in the testapp directory)
 
 $ flask --app test_app.py run 
